@@ -14,7 +14,11 @@ This template provides a ready-to-use structure for writing research papers in A
 
 ## Getting Started
 - Download as ZIP file and Use [Overleaf](https://www.overleaf.com/project) to import the project.
+ 
+
 Or 
+
+
 - Clone this repository
 ``
 https://github.com/iamgmujtaba/LaTeX-APA_Template.git
