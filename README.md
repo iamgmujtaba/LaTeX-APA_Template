@@ -9,7 +9,7 @@ This template provides a ready-to-use structure for writing research papers in A
 - `main.tex` - The main LaTeX document
 - `figures/` - Directory for storing figures and images
 - `references.bib` - BibTeX file for managing references
-- [Template_and_Sample_for_Writing_APA_6_Manuscripts_with_Bibliography.pdf](https://github.com/iamgmujtaba/LaTeX-APA_Template/blob/main/Template_and_Sample_for_Writing_APA_6_Manuscripts_with_Bibliography.pdf) - Sample PDF output
+- [APA7_Template_with_Bibliography.pdf](https://github.com/iamgmujtaba/LaTeX-APA_Template/blob/main/APA7_Template_with_Bibliography.pdf) - Sample PDF output
 
 ## Getting Started
 - Download as ZIP file and Use [Overleaf](https://www.overleaf.com/project) to import the project.
