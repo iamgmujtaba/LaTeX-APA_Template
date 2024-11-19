@@ -1,6 +1,4 @@
 \documentclass[stu,12pt,floatsintext]{apa7}
-% \documentclass[stu,12pt,floatsintext]{apa6}
-
 
 % ============ Required Packages ============
 \usepackage[english]{babel}  % Provides language-specific definitions
@@ -9,26 +7,39 @@
 \usepackage{graphicx}  % Required for inserting images
 \usepackage[colorinlistoftodos]{todonotes}  % Todo notes for draft versions
 \setlength{\marginparwidth}{2cm}  % Set the margin width for todo notes
-\usepackage{apacite} 
+\usepackage{float}        % Enhanced figure positioning
+\usepackage{booktabs}     % Professional table formatting
+\usepackage{hyperref}     % Better link handling
+\usepackage{csquotes}     % Improved quotation management
+
+\usepackage{microtype}  % Improves typography
+\usepackage{hyperref}   % Better link and reference handling
+\usepackage{csquotes}   % Improved quotation handling
+
+\usepackage{apacite} % APA citation style
 \usepackage{natbib}  % Provides citation commands
 \bibliographystyle{apacite}  % APA citation style
 
-% ============ Document Metadata ============
-\title{\Large{Template and Sample for Writing APA 7 Manuscripts with Bibliography}}
-\shorttitle{APA LaTeX Template}  % Required for running headers
-\author{First Last}
-\affiliation{Department name \\ Organization name}
-\date{\today}  % Automatically inserts current date
 
+% ============ Document Metadata ============
+\title{Research Manuscript Template with Integrated Guidance}
+\shorttitle{Research Writing Guide}
+\author{Student Name}
+\authorsaffiliations{Department of Research, University Name}
+\duedate{\today}
+\course{MSDS 000}
+\professor{Prof. ABC} 
 % ============ Abstract ============
 \abstract{
     The abstract should be a single paragraph of 150-250 words.\\
-    % It should include:
-    % - Research problem/purpose
-    % - Method
-    % - Results
-    % - Conclusions/implications
-This document serves as a comprehensive template for creating APA-style manuscripts using LaTeX. It demonstrates proper formatting for various sections, including figures, tables, citations, and references. The template is compatible with both APA6 and APA7 styles and features extensive documentation and examples. Users can easily adapt this template by replacing sample content with their own research material while maintaining APA compliance.
+  Abstract Writing Checklist:
+    \begin{itemize}
+        \item Include research problem/purpose
+        \item Describe methodology briefly
+        \item Highlight key results
+        \item Emphasize conclusions and implications
+    \end{itemize}
+This document serves as a comprehensive template for creating APA-style manuscripts using LaTeX. It demonstrates proper formatting for various sections, including figures, tables, citations, and references. The template is compatible with APA7 styles and features extensive documentation and examples. Users can quickly adapt this template by replacing sample content with their research material while maintaining APA compliance.
 }
 
 % ============ Main Document ============
@@ -37,19 +48,36 @@ This document serves as a comprehensive template for creating APA-style manuscri
 
 % ============ Introduction Section ============
 \section{Introduction}
-The introduction should:
-\\- Present the research problem and its context
-\\- Review relevant literature
-\\- State research questions/hypotheses
-\\- Outline the paper's structure
 
+\subsection{Guidance for Crafting an Effective Introduction}
 
+\textbf{Key Components:}
+\begin{itemize}
+    \item Provide broad contextual background
+    \item Identify the specific research problem
+    \item Review relevant existing literature
+    \item Highlight knowledge gaps
+    \item State clear research questions/hypotheses
+    \item Explain the study's significance
+    \item Outline the study's structure
+\end{itemize}
 
-To \textbf{bold text}, \textit{italic text}, \textbf{\textit{italic and bold text}}, 
-\underline{underlined text}, \underline{\textit{italic and underlined text}}, 
+% Example research question formatting
+\begin{quote}
+\textit{Research Question: How do [specific variables] influence [outcome]?}
+\end{quote}
+
+\textbf{bold text}, 
+\textit{italic text}, 
+\textbf{\textit{italic and bold text}}, 
+\underline{underlined text}, 
+\underline{\textit{italic and underlined text}}, 
 \underline{\textbf{bold and underlined text}}, 
-\underline{\textbf{\textit{italic, bold, and underlined text}}}, \textsc{small caps text}, \texttt{typewriter text}, 
-\emph{emphasized text}, {\Large large text} (e.g., large, small, tiny, etc.).
+\underline{\textbf{\textit{italic, bold, and underlined text}}}, 
+\texttt{typewriter text}, 
+\emph{emphasized text}, 
+\textsc{small caps text}, 
+{\Large large text} (e.g., large, small, tiny, etc.).
 
 
 % Example of citation usage:
@@ -67,7 +95,17 @@ To cite papers, use various citation commands:
 
 % ============ Methodology Section ============
 \section{Methodology}
-This is the methodology section to describe the approach.
+This is the methodology section that describes the approach.
+\textbf{Essential Methodology Components:}
+\begin{itemize}
+    \item Research Design Type (Experimental, Correlational, etc.)
+    \item Participant Recruitment Strategy
+    \item Sample Characteristics
+    \item Data Collection Instruments
+    \item Procedural Details
+    \item Ethical Considerations
+    \item Statistical Analysis Plan
+\end{itemize}
 
 \subsection{Analysis}
 
@@ -111,7 +149,6 @@ Example of figure insertion with t, h, and !b positioning
 \end{figure}
 
 
-
 \begin{figure}[!ht]
     \centering
     \includegraphics[width=0.6\linewidth]{figures/sample_img.png}
@@ -121,39 +158,40 @@ Example of figure insertion with t, h, and !b positioning
 
 % ============ Results Section ============
 \section{Results}
-% Present findings in a logical order:
-% - Descriptive statistics first
-% - Inferential statistics second
-% - Include tables and figures as needed
+\textbf{Results Presentation Strategy:}
+\begin{itemize}
+    \item Present data objectively
+    \item Follow logical research question sequence
+    \item Include descriptive and inferential statistics
+    \item Utilize tables and figures effectively
+    \item Report statistical significance
+\end{itemize}
 
-\subsection{Descriptive Statistics}
-% Example of table creation
+% Example Table
 \begin{table}[ht]
-    \caption{Descriptive of the table}
+    \caption{Descriptive Statistics Template}
     \centering
     \begin{tabular}{lcc}
         \hline
-        Type &  Column Two & Column Two \\
+        Variable & Mean & Standard Deviation \\
         \hline
-        Value one & 000 & 00.0 \\
-        value two & 000 & 00.0 \\
+        Example 1 & 0.00 & 0.00 \\
+        Example 2 & 0.00 & 0.00 \\
         \hline
     \end{tabular}
-    \label{tab:descriptive_stats}
 \end{table}
-
-
-
-
 
 % ============ Discussion Section ============
 \section{Discussion and Conclusions}
-% Include:
-% - Summary of findings
-% - Interpretation of results
-% - Limitations
-% - Future research directions
-% - Practical implications
+\textbf{Discussion Section Checklist:}
+\begin{itemize}
+    \item Summarize key findings
+    \item Interpret results relative to hypotheses
+    \item Compare with existing literature
+    \item Acknowledge study limitations
+    \item Suggest future research directions
+    \item Discuss practical implications
+\end{itemize}
 
 Our results align with previous research \citep{mujtaba2023frc}. This suggests several key points:
 
