@@ -1,10 +1,9 @@
-# LaTeX-APA_Template
+# Research Manuscript APA 7 Template with Integrated Guidance
 
-A comprehensive LaTeX template for writing academic papers and research manuscripts in APA 6th and 7th edition formats.
+A comprehensive LaTeX template for writing academic papers and research manuscripts in APA 7th edition format.
 
 ## Overview
 This template provides a ready-to-use structure for writing research papers in APA format, complete with proper formatting for all essential sections. It supports advanced mathematical formatting and includes proper citation and bibliography management examples.
-
 
 ## Files in the Repository
 - `main.tex` - The main LaTeX document
