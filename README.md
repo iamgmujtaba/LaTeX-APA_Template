@@ -25,5 +25,3 @@ https://github.com/iamgmujtaba/LaTeX-APA_Template.git
 - Open `main.tex` in your preferred LaTeX editor.
 - Modify the content sections according to your needs
 - Compile the document using your LaTeX distribution
-
-![image](https://github.com/user-attachments/assets/3e2193af-31fb-40c3-9930-20179506422e)
